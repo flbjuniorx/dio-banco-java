@@ -1,7 +1,14 @@
 public class Cliente {
 
-    public String nomeCliente;
-    public int cpfCliente;
+    protected String nomeCliente;
+    private String cpfCliente;
 
+    protected Cliente(String nomeCliente, String cpfCliente) {
+        this.nomeCliente = nomeCliente;
+        this.cpfCliente = cpfCliente;
+    }
 
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
 }

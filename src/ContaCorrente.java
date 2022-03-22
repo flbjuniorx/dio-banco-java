@@ -1,19 +1,13 @@
-public class ContaCorrente {
 
-    protected int numeroCC;
-    protected int agenciaCC;
-    protected double saldoCC;
+public class ContaCorrente extends Conta {
 
-    protected void sacar () {
-
+    protected ContaCorrente(Cliente cliente) {
+        super(cliente);
     }
 
-    protected  void depositar() {
-
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("=== Extrato Conta-Corrente ===");
+        super.imprimirInfosComuns();
     }
-
-    protected void transferir(int contaDestino, double valor) {
-
-    }
-
 }
